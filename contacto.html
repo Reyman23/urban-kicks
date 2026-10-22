@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactate con URBAN KICKS, tu tienda de zapatillas urbanas.">
+    <title>Contacto | URBAN KICKS</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/contacto.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <nav class="menu">
+            <a class="logo" href="index.html">URBAN KICKS</a>
+
+            <ul class="menu-enlaces">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html" class="activo" aria-current="page">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="seccion-contacto">
+            <div class="encabezado-contacto">
+                <p class="etiqueta-contacto">ESTAMOS PARA AYUDARTE</p>
+                <h1>Contactate con nosotros</h1>
+                <p>
+                    ¿Tenés alguna consulta sobre nuestros productos?
+                    Completá el formulario y dejanos tu mensaje.
+                </p>
+            </div>
+
+            <div class="contenedor-formulario">
+                <form id="formulario-contacto" novalidate>
+                    <div class="grupo-campo">
+                        <label for="nombre">Nombre completo</label>
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            placeholder="Escribí tu nombre"
+                            maxlength="50"
+                            autocomplete="name"
+                            aria-describedby="error-nombre"
+                        >
+                        <small class="error" id="error-nombre"></small>
+                    </div>
+
+                    <div class="grupo-campo">
+                        <label for="correo">Correo electrónico</label>
+                        <input
+                            type="email"
+                            id="correo"
+                            name="correo"
+                            placeholder="ejemplo@correo.com"
+                            maxlength="100"
+                            autocomplete="email"
+                            aria-describedby="error-correo"
+                        >
+                        <small class="error" id="error-correo"></small>
+                    </div>
+
+                    <div class="grupo-campo">
+                        <label for="telefono">Teléfono</label>
+                        <input
+                            type="tel"
+                            id="telefono"
+                            name="telefono"
+                            placeholder="Ej.: 266 123 4567"
+                            maxlength="20"
+                            autocomplete="tel"
+                            aria-describedby="error-telefono"
+                        >
+                        <small class="error" id="error-telefono"></small>
+                    </div>
+
+                    <div class="grupo-campo">
+                        <label for="mensaje">Tu mensaje</label>
+                        <textarea
+                            id="mensaje"
+                            name="mensaje"
+                            rows="5"
+                            placeholder="Escribí tu consulta..."
+                            maxlength="500"
+                            aria-describedby="error-mensaje"
+                        ></textarea>
+                        <small class="error" id="error-mensaje"></small>
+                    </div>
+
+                    <button type="submit" class="boton-enviar">
+                        Enviar mensaje
+                    </button>
+
+                    <p class="nota-formulario">
+                        Revisá tus datos antes de enviar el formulario.
+                    </p>
+                </form>
+
+                <div id="resultado" aria-live="polite"></div>
+            </div>
+        </section>
+    </main>
+
+ 
+<footer class="pie-pagina">
+    <div class="contenido-pie">
+        <div class="info-pie">
+            <a href="index.html" class="logo-pie">URBAN KICKS</a>
+            <p>Tu estilo, tus reglas.</p>
+            <p>Zapatillas urbanas para marcar tu propio camino.</p>
+        </div>
+
+        <div class="enlaces-pie">
+            <h3>Enlaces rápidos</h3>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+
+        <div class="redes-pie">
+            <h3>Seguinos</h3>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+            <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">TikTok ↗</a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
+        </div>
+    </div>
+
+    <div class="copyright-pie">
+        <p>© 2026 URBAN KICKS · Proyecto académico</p>
+    </div>
+</footer>
+
+</body>
+</html>
